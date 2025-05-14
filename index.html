@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Javascript events and basic interactivity</title>
+  </head>
+  <body>
+    <h1>🎉 Interactive Bundle of Joy 🎉</h1>
+
+    <section>
+      <h2>🎈 Event Handling</h2>
+      <button id="colorButton">Click Me!</button>
+      <p
+        id="secretMessage"
+        style="display: none; color: green; margin-top: 1rem"
+      >
+        🎊 You found the secret!
+      </p>
+    </section>
+
+    <section>
+      <h2>🎮 Interactive Elements</h2>
+
+      <h3>Image Gallery</h3>
+      <div class="gallery">
+        <img
+          src="https://images.pexels.com/photos/21727965/pexels-photo-21727965/free-photo-of-ruins-of-colosseum-in-summer.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+          alt="1"
+        />
+        <img
+          src="https://images.pexels.com/photos/31859397/pexels-photo-31859397/free-photo-of-sunset-at-coogee-beach-with-heavy-machinery.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+          alt="2"
+        />
+        <img
+          src="https://images.pexels.com/photos/31956916/pexels-photo-31956916/free-photo-of-vibrant-orange-fish-swimming-underwater.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+          alt="3"
+        />
+      </div>
+
+      <h3 style="margin-top: 2rem">Tabs</h3>
+      <div class="tabs">
+        <div class="tab active" data-tab="1">Tab 1</div>
+        <div class="tab" data-tab="2">Tab 2</div>
+      </div>
+      <div class="tab-content active" id="tab-1">Welcome to Tab 1 🎯</div>
+      <div class="tab-content" id="tab-2">Now you're in Tab 2 🌟</div>
+    </section>
+
+    <section>
+      <h2>📋 Form Validation</h2>
+      <form id="form">
+        <label>
+          Email:
+          <input type="email" id="email" required />
+          <div class="feedback" id="emailFeedback"></div>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" required minlength="8" />
+          <div class="feedback" id="passFeedback"></div>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
